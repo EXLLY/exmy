@@ -17,7 +17,7 @@ Ticker : EXMY
 Block Time : 10 seconds
 Retarget Time : 30 seconds
 
-Build on Ubuntu 18.04
+Build on UNIX
 -------
 
     sudo add-apt-repository ppa:bitcoin/bitcoin -y && apt-get update -y
