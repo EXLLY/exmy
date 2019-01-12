@@ -20,6 +20,8 @@ Block Time : 10 seconds
 
 Retarget Time : 30 seconds
 
+Exchange : https://exlly.com/market/BTC-EXMY
+
 Build on UNIX
 -------
 
