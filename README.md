@@ -13,8 +13,11 @@ What is Exmy?
 Exmy is a cryptocurrency that is intended for internal use in the EXLLY exchange platform. This cryptocurrency is used among other things for the payment of fees and payment on the e-commerce website of Exlly.
 
 Name : Exmy
+
 Ticker : EXMY
+
 Block Time : 10 seconds
+
 Retarget Time : 30 seconds
 
 Build on UNIX
