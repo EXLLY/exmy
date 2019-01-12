@@ -1,0 +1,9 @@
+Building Exmy
+
+See doc/readme-qt.rst for instructions on building Exmy-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Exmy.
+
+See doc/build-*.txt for instructions on building exmyd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Exmy.
