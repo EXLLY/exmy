@@ -1,74 +1,35 @@
 Exmy integration/staging tree
 ================================
 
-http://www.exmy.org
+https://elly.com
 
-Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 Litecoin Developers
-Copyright (c) 2011-2014 Exmy Developers
+Copyright (c) 2009-2019 Bitcoin Developers
+Copyright (c) 2011-2019 Litecoin Developers
+Copyright (c) 2019 Exmy Developers
 
 What is Exmy?
 ----------------
 
-Exmy is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
- - 30 second block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~840 million total coins
+Exmy is a cryptocurrency that is intended for internal use in the EXLLY exchange platform. This cryptocurrency is used among other things for the payment of fees and payment on the e-commerce website of Exlly.
 
-The rest is the same as Bitcoin.
- - 500 coins per block
- - 10 blocks to retarget difficulty
+Name : Exmy
+Ticker : EXMY
+Block Time : 10 seconds
+Retarget Time : 30 seconds
 
-For more information, as well as an immediately useable, binary version of
-the Exmy client sofware, see http://www.exmy.org.
+Build on Ubuntu 18.04
+-------
+
+    sudo add-apt-repository ppa:bitcoin/bitcoin -y && apt-get update -y
+    sudo apt-get install build-essential libtool libminiupnpc-dev autotools-dev -y
+    sudo apt-get install libssl1.0-dev autoconf libdb4.8-dev libdb4.8++-dev libboost-all-dev -y
+    git clone https://github.com/EXLLY/exmy.git
+    cd exmy/src
+    make -f makefile.unix
+
 
 License
 -------
 
 Exmy is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
-
-Development process
--------------------
-
-Developers work in their own trees, then submit pull requests when they think
-their feature or bug fix is ready.
-
-If it is a simple/trivial/non-controversial change, then one of the Exmy
-development team members simply pulls it.
-
-If it is a *more complicated or potentially controversial* change, then the patch
-submitter will be asked to start a discussion with the devs and community.
-
-The patch will be accepted if there is broad consensus that it is a good thing.
-Developers should expect to rework and resubmit patches if the code doesn't
-match the project's coding conventions (see `doc/coding.txt`) or are
-controversial.
-
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/exmy-project/exmy/tags) are created
-regularly to indicate new official, stable release versions of Exmy.
-
-Testing
--------
-
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test. Please be patient and help out, and
-remember this is a security-critical project where any mistake might cost people
-lots of money.
-
-### Automated Testing
-
-Developers are strongly encouraged to write unit tests for new code, and to
-submit new unit tests for old code.
-
-Unit tests for the core code are in `src/test/`. To compile and run them:
-
-    cd src; make -f makefile.unix test
-
-Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
-
-    qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
-    make -f Makefile.test
-    ./exmy-qt_test
-
