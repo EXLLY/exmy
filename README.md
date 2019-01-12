@@ -20,6 +20,12 @@ Block Time : 10 seconds
 
 Retarget Time : 30 seconds
 
+Block Reward : from 300 to 1000
+
+Total Supply : 10.000.000.000
+
+Premine : 500.000.000
+
 Exchange : https://exlly.com/market/BTC-EXMY
 
 Build on UNIX
